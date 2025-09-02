@@ -4,14 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-05</title>
+    <!-- tailwind cdn -->
+     <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Daisy apa cdn -->
+         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.css" rel="stylesheet" type="text/css" />
+
 </head>
-<body>
-    <header>
-        <nav>
-            <div>
-                <h1>Emergency Service</h1>
+<body class="#FFFFFF  mt-4">
+    <header class="">
+        <!-- navbar section -->
+        <nav class="flex justify-between container mx-auto">
+
+            <div class="flex gap-2 items-center justify-center">
+                <div >
+                    <img class="w-[50px]" src="assets/logo.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-[#006747] font-bold ">Emergency <br> Service</h1>
+                </div>
+            </div>
+            <div class="flex justify-between gap-4">
+                <!-- heart -->
+                <div class="flex gap-1  bg-blue-100 px-6 rounded-2xl items-center">
+                    <div>
+                        <p>0</p>
+                    </div>
+                    <div>
+                        <img class="w-[25px]" src="assets/heart.png" alt="">
+                    </div>
+                </div>
+                <!-- bitcoin -->
+                 <div  class="flex gap-1 bg-blue-100 px-4 rounded-2xl items-center ">
+                    <div>
+                        <p class="font-bold">100</p>
+                    </div>
+                    <div>
+                        <img class="w-[25px]" src="assets/coin.png" alt="">
+                    </div>
+                 </div>
+                 <!-- copy -->
+                  <div class=" bg-green-600 px-8 rounded-2xl items-center flex ">
+                    <div>
+                        <p class="font-semibold text-white">0 Copy</p>
+                    </div>
+                  </div>
             </div>
         </nav>
+        <!-- hero section -->
+         <section class="bg-green-950">
+            <div >
+                <div  class="pb-2 pt-4 mt-4 mb-10">
+                    <img  class="w-[150px] mx-auto" src="assets/logo-dark.png" alt="">
+                    <h1 class="text-white text-center text-2xl  pb-1 font-semibold">Emergency Service Directory</h1>
+                    <p class="text-white  text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                </div>
+            </div>
+         </section>
     </header>
     <main>
 
