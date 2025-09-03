@@ -96,8 +96,10 @@ for (const call of allclass) {
     if(newcoin>0){
         newcoin=newcoin-20;
     }
+
     else{
         alert("Your coin is finished")
+        return ;
     }
     
     

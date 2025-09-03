@@ -38,21 +38,19 @@ document.body.appendChild(div);
 
 
 // Quesion-3
-
 ## 3. What is Event Bubbling and how does it work?
 
-Event bubbling is a behavior in the DOM where an event starts from the element that triggered it and then propagates (moves upward) through its parent elements, one by one, until it reaches the top (document or window).
+Event Bubbling happens when an event starts from the element that was clicked and then goes up to its parent elements, all the way to the document.
 
-### Example:
-Suppose you have a `<button>` inside a `<div>`, and the `<div>` is inside the `<body>`.  
-If you click the button:
+Example:  
+```javascript
+document.querySelector(".child").addEventListener("click", () => {
+  console.log("Child clicked");
+});
+document.querySelector(".parent").addEventListener("click", () => {
+  console.log("Parent clicked");
+});
 
-1. The event on the button is triggered first.  
-2. Then the event on the parent `<div>` is triggered.  
-3. After that, the `<body>` event is triggered.  
-4. Finally, it can reach `document` and `window`.  
-
-This way, the event "bubbles up" the DOM tree from child to parent step by step.
 
 
 //Question 4
